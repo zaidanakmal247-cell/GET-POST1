@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #e8eae9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* =============================================
+   BACK TO SITE BUTTON
+   ============================================= */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #009c39;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.back-btn:hover {
+    background-color: #066825;
+}
+
+.back-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* =============================================
+   CONTAINER
+   ============================================= */
+.container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* =============================================
+   LOGO SECTION
+   ============================================= */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2d3e3d;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.logo .tagline {
+    font-size: 13px;
+    font-weight: 700;
+    color: #666;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.logo .subtitle {
+    font-size: 9px;
+    color: #888;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+}
+
+/* =============================================
+   FORM CONTAINER
+   ============================================= */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.form-container.form-wide {
+    max-width: 550px;
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2d3e3d;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* =============================================
+   FORM ELEMENTS
+   ============================================= */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2d3e3d;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 0px  #d1d5db;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #009c39;
+    color: white;
+    transition: border-color 0.3s;
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2d4a48;
+}
+
+/* Forgot password link */
+.forgot-link {
+    color: #4a9d96;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* =============================================
+   BUTTONS
+   ============================================= */
+.btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background-color:#009c39 ;
+    color: white;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #066825;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(54, 94, 92, 0.3);
+}
+
+.btn-secondary {
+    background-color: #365e5c;
+    color: white;
+    flex: 1;
+}
+
+.btn-secondary:hover {
+    background-color: #066825;
+}
+
+.btn-center {
+    max-width: 200px;
+    margin: 20px auto 0;
+}
+
+
+/* =============================================
+   SIGNUP BOX
+   ============================================= */
+.signup-box {
+    background-color: #009c39;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-box a {
+    color: #1923dc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-box a:hover {
+    text-decoration: underline;
+}
+
+/* =============================================
+   CHECKBOX CONTAINER
+   ============================================= */
+.checkbox-container {
+    background-color: #009c39;
+    padding: 18px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-top: 3px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.checkbox-label {
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.checkbox-label strong {
+    font-weight: 600;
+}
+
+.checkbox-description {
+    font-size: 12px;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* =============================================
+   RESPONSIVE DESIGN
+   ============================================= */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .form-container {
+        padding: 30px 25px;
+    }
+
+    .logo img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .logo h1 {
+        font-size: 26px;
+    }
+
+    .back-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .form-container {
+        padding: 25px 20px;
+    }
+
+    .form-container h2 {
+        font-size: 20px;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .back-btn {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+}

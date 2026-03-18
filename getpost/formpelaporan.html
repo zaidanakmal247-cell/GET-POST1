@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Buat Laporan | SIMADIK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="laporan.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Form Laporan Pengaduan Pendidikan</h2>
+
+  <div id="successMsg" class="success">
+    ✅ Laporan berhasil dikirim!
+  </div>
+
+  <form id="laporanForm">
+
+    <label>Kategori Laporan</label>
+    <select id="kategori">
+      <option value="">-- Pilih Kategori --</option>
+      <option>Perundungan / Bullying</option>
+      <option>Pungutan Liar (Pungli)</option>
+      <option>Pelecehan Seksual</option>
+      <option>Kekerasan</option>
+      <option>Fasilitas Sekolah</option>
+    </select>
+
+    <label>Kronologi Kejadian</label>
+    <textarea id="kronologi" rows="5"
+      placeholder="Jelaskan kronologi kejadian..."></textarea>
+
+    <label>Nama Sekolah / Lokasi</label>
+    <input type="text" id="lokasi"
+      placeholder="Nama sekolah atau lokasi kejadian">
+
+    <label>Upload Bukti (opsional)</label>
+    <input type="file" id="bukti">
+    <div class="info" id="fileInfo"></div>
+
+    <div class="checkbox">
+      <input type="checkbox" id="anonim">
+      <span>Laporkan sebagai Anonim</span>
+    </div>
+
+    <button type="submit">Kirim Laporan</button>
+
+  </form>
+</div>
+
+<script src="laporan.js"></script>
+</body>
+</html>
